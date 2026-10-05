@@ -1,0 +1,1744 @@
+{
+  "reader": "swiss-ai/Apertus-v1.5-8B",
+  "d_model": 4096,
+  "token_cap": 2048,
+  "train": {
+    "rows": 63328,
+    "epochs": 1,
+    "seed": 1,
+    "lr": 0.001,
+    "elapsed_h": 8.251,
+    "counts": {
+      "judgment": 53474,
+      "law_area": 9854
+    },
+    "mean_loss": {
+      "judgment": 0.5266610016272671,
+      "law_area": 0.28512384416203523
+    }
+  },
+  "splits": {
+    "test": {
+      "judgment": {
+        "n": 14563,
+        "accuracy": 0.8091739339421823,
+        "macro_f1": 0.46209756496621085,
+        "majority_label": "dismissal",
+        "majority_accuracy": 0.8093112682826341,
+        "majority_macro_f1": 0.44730350297924026,
+        "classes": [
+          {
+            "label": "dismissal",
+            "support": 11786,
+            "predicted": 14475,
+            "precision": 0.8111226252158895,
+            "recall": 0.9961819107415578,
+            "f1": 0.8941776779254409
+          },
+          {
+            "label": "approval",
+            "support": 2777,
+            "predicted": 88,
+            "precision": 0.48863636363636365,
+            "recall": 0.015484335613971912,
+            "f1": 0.0300174520069808
+          }
+        ],
+        "mean_loss": 0.41212572107494566,
+        "confusion": {
+          "dismissal": {
+            "dismissal": 11741,
+            "approval": 45
+          },
+          "approval": {
+            "dismissal": 2734,
+            "approval": 43
+          }
+        },
+        "confidence": [
+          {
+            "threshold": 0.5,
+            "coverage": 1.0,
+            "n": 14563,
+            "accuracy": 0.8091739339421823
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.7336400466936758,
+            "n": 10684,
+            "accuracy": 0.8784163234743542
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.4507999725331319,
+            "n": 6565,
+            "accuracy": 0.9477532368621477
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.34518986472567464,
+            "n": 5027,
+            "accuracy": 0.973145016908693
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.23243837121472224,
+            "n": 3385,
+            "accuracy": 0.9787296898079764
+          }
+        ],
+        "by_language": {
+          "de": {
+            "n": 8270,
+            "accuracy": 0.8064087061668682,
+            "macro_f1": 0.4659736781212304,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.8051995163240628,
+            "majority_macro_f1": 0.44604461115948824,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 6659,
+                "predicted": 8214,
+                "precision": 0.8078889700511322,
+                "recall": 0.996546027932122,
+                "f1": 0.8923552746587776
+              },
+              {
+                "label": "approval",
+                "support": 1611,
+                "predicted": 56,
+                "precision": 0.5892857142857143,
+                "recall": 0.020484171322160148,
+                "f1": 0.039592081583683256
+              }
+            ],
+            "mean_loss": 0.41031062090409043
+          },
+          "fr": {
+            "n": 5569,
+            "accuracy": 0.8109175794577124,
+            "macro_f1": 0.45700967939520787,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.8130723648769976,
+            "majority_macro_f1": 0.44845003466376154,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 4528,
+                "predicted": 5537,
+                "precision": 0.8137980856059238,
+                "recall": 0.9951413427561837,
+                "f1": 0.8953800298062592
+              },
+              {
+                "label": "approval",
+                "support": 1041,
+                "predicted": 32,
+                "precision": 0.3125,
+                "recall": 0.009606147934678195,
+                "f1": 0.018639328984156572
+              }
+            ],
+            "mean_loss": 0.4199957719032898
+          },
+          "it": {
+            "n": 724,
+            "accuracy": 0.8273480662983426,
+            "macro_f1": 0.4527588813303099,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.8273480662983426,
+            "majority_macro_f1": 0.4527588813303099,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 599,
+                "predicted": 724,
+                "precision": 0.8273480662983426,
+                "recall": 1.0,
+                "f1": 0.9055177626606198
+              },
+              {
+                "label": "approval",
+                "support": 125,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ],
+            "mean_loss": 0.372322634541692
+          }
+        }
+      },
+      "law_area": {
+        "n": 7577,
+        "accuracy": 0.8830671769829748,
+        "macro_f1": 0.6378804080066652,
+        "majority_label": "Substantive Criminal",
+        "majority_accuracy": 0.2603932954995381,
+        "majority_macro_f1": 0.03178413209826823,
+        "classes": [
+          {
+            "label": "Bankruptcy",
+            "support": 206,
+            "predicted": 185,
+            "precision": 0.9513513513513514,
+            "recall": 0.8543689320388349,
+            "f1": 0.9002557544757033
+          },
+          {
+            "label": "Competition and Antitrust",
+            "support": 6,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Criminal Procedure",
+            "support": 1011,
+            "predicted": 1319,
+            "precision": 0.731614859742229,
+            "recall": 0.9545004945598418,
+            "f1": 0.8283261802575107
+          },
+          {
+            "label": "Employment Contract",
+            "support": 389,
+            "predicted": 402,
+            "precision": 0.9577114427860697,
+            "recall": 0.9897172236503856,
+            "f1": 0.9734513274336283
+          },
+          {
+            "label": "Expropriation",
+            "support": 0,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Family",
+            "support": 263,
+            "predicted": 160,
+            "precision": 1.0,
+            "recall": 0.6083650190114068,
+            "f1": 0.756501182033097
+          },
+          {
+            "label": "Intellectual Property",
+            "support": 11,
+            "predicted": 7,
+            "precision": 1.0,
+            "recall": 0.6363636363636364,
+            "f1": 0.7777777777777778
+          },
+          {
+            "label": "Other Fiscal",
+            "support": 1,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Public Administration",
+            "support": 280,
+            "predicted": 354,
+            "precision": 0.3050847457627119,
+            "recall": 0.38571428571428573,
+            "f1": 0.34069400630914826
+          },
+          {
+            "label": "Rental and Lease",
+            "support": 846,
+            "predicted": 874,
+            "precision": 0.959954233409611,
+            "recall": 0.991725768321513,
+            "f1": 0.9755813953488373
+          },
+          {
+            "label": "Substantive Criminal",
+            "support": 1973,
+            "predicted": 1903,
+            "precision": 0.9753021544929059,
+            "recall": 0.9406994424733908,
+            "f1": 0.957688338493292
+          },
+          {
+            "label": "Tax",
+            "support": 1580,
+            "predicted": 1309,
+            "precision": 0.9381207028265852,
+            "recall": 0.7772151898734178,
+            "f1": 0.8501211491865699
+          },
+          {
+            "label": "Urban Planning and Environmental",
+            "support": 1011,
+            "predicted": 1064,
+            "precision": 0.9088345864661654,
+            "recall": 0.9564787339268052,
+            "f1": 0.9320481927710844
+          }
+        ],
+        "mean_loss": 0.42050449235604603,
+        "confusion": {
+          "Bankruptcy": {
+            "Bankruptcy": 176,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 7,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 1,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 22,
+            "Urban Planning and Environmental": 0
+          },
+          "Competition and Antitrust": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 6,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Criminal Procedure": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 965,
+            "Employment Contract": 1,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 8,
+            "Rental and Lease": 2,
+            "Substantive Criminal": 31,
+            "Tax": 3,
+            "Urban Planning and Environmental": 0
+          },
+          "Employment Contract": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 385,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 3,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Expropriation": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Family": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 12,
+            "Employment Contract": 1,
+            "Expropriation": 0,
+            "Family": 160,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 87,
+            "Rental and Lease": 1,
+            "Substantive Criminal": 1,
+            "Tax": 1,
+            "Urban Planning and Environmental": 0
+          },
+          "Intellectual Property": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 2,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 7,
+            "Other Fiscal": 0,
+            "Public Administration": 2,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Other Fiscal": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 1,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Public Administration": {
+            "Bankruptcy": 3,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 89,
+            "Employment Contract": 2,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 108,
+            "Rental and Lease": 2,
+            "Substantive Criminal": 1,
+            "Tax": 38,
+            "Urban Planning and Environmental": 37
+          },
+          "Rental and Lease": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 1,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 5,
+            "Rental and Lease": 839,
+            "Substantive Criminal": 0,
+            "Tax": 1,
+            "Urban Planning and Environmental": 0
+          },
+          "Substantive Criminal": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 107,
+            "Employment Contract": 1,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 7,
+            "Rental and Lease": 2,
+            "Substantive Criminal": 1856,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Tax": {
+            "Bankruptcy": 3,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 136,
+            "Employment Contract": 12,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 99,
+            "Rental and Lease": 28,
+            "Substantive Criminal": 14,
+            "Tax": 1228,
+            "Urban Planning and Environmental": 60
+          },
+          "Urban Planning and Environmental": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 27,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 16,
+            "Urban Planning and Environmental": 967
+          }
+        },
+        "confidence": [
+          {
+            "threshold": 0.5,
+            "coverage": 0.9322951036030092,
+            "n": 7064,
+            "accuracy": 0.9200169875424689
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.8590471162729313,
+            "n": 6509,
+            "accuracy": 0.9516054693501306
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.8186617394747261,
+            "n": 6203,
+            "accuracy": 0.9664678381428341
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.7249571070344464,
+            "n": 5493,
+            "accuracy": 0.9796104132532314
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.5972020588623466,
+            "n": 4525,
+            "accuracy": 0.9896132596685083
+          }
+        ],
+        "by_language": {
+          "de": {
+            "n": 2248,
+            "accuracy": 0.8758896797153025,
+            "macro_f1": 0.39907561431069283,
+            "majority_label": "Urban Planning and Environmental",
+            "majority_accuracy": 0.4248220640569395,
+            "majority_macro_f1": 0.045870457984101436,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 183,
+                "predicted": 177,
+                "precision": 0.9774011299435028,
+                "recall": 0.9453551912568307,
+                "f1": 0.961111111111111
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 4,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 271,
+                "predicted": 383,
+                "precision": 0.6945169712793734,
+                "recall": 0.981549815498155,
+                "f1": 0.8134556574923547
+              },
+              {
+                "label": "Employment Contract",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 39,
+                "predicted": 6,
+                "precision": 1.0,
+                "recall": 0.15384615384615385,
+                "f1": 0.2666666666666667
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 1,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 200,
+                "predicted": 99,
+                "precision": 0.45454545454545453,
+                "recall": 0.225,
+                "f1": 0.3010033444816053
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 3,
+                "predicted": 2,
+                "precision": 1.0,
+                "recall": 0.6666666666666666,
+                "f1": 0.8
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 39,
+                "predicted": 4,
+                "precision": 0.75,
+                "recall": 0.07692307692307693,
+                "f1": 0.13953488372093026
+              },
+              {
+                "label": "Tax",
+                "support": 553,
+                "predicted": 618,
+                "precision": 0.8932038834951457,
+                "recall": 0.9981916817359855,
+                "f1": 0.9427839453458582
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 955,
+                "predicted": 959,
+                "precision": 0.9614181438998958,
+                "recall": 0.9654450261780104,
+                "f1": 0.9634273772204808
+              }
+            ],
+            "mean_loss": 0.373532635810432
+          },
+          "fr": {
+            "n": 4579,
+            "accuracy": 0.8770473902598821,
+            "macro_f1": 0.5112514133447323,
+            "majority_label": "Substantive Criminal",
+            "majority_accuracy": 0.40401834461672853,
+            "majority_macro_f1": 0.04427055290331072,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 0,
+                "predicted": 5,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 2,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 679,
+                "predicted": 850,
+                "precision": 0.7541176470588236,
+                "recall": 0.9440353460972017,
+                "f1": 0.8384565075212557
+              },
+              {
+                "label": "Employment Contract",
+                "support": 389,
+                "predicted": 402,
+                "precision": 0.9577114427860697,
+                "recall": 0.9897172236503856,
+                "f1": 0.9734513274336283
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 224,
+                "predicted": 154,
+                "precision": 1.0,
+                "recall": 0.6875,
+                "f1": 0.8148148148148148
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 11,
+                "predicted": 7,
+                "precision": 1.0,
+                "recall": 0.6363636363636364,
+                "f1": 0.7777777777777778
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 80,
+                "predicted": 255,
+                "precision": 0.24705882352941178,
+                "recall": 0.7875,
+                "f1": 0.37611940298507457
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 843,
+                "predicted": 872,
+                "precision": 0.9598623853211009,
+                "recall": 0.9928825622775801,
+                "f1": 0.9760932944606415
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 1850,
+                "predicted": 1829,
+                "precision": 0.9764898851831602,
+                "recall": 0.9654054054054054,
+                "f1": 0.9709160097852677
+              },
+              {
+                "label": "Tax",
+                "support": 445,
+                "predicted": 100,
+                "precision": 0.98,
+                "recall": 0.2202247191011236,
+                "f1": 0.3596330275229358
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 56,
+                "predicted": 105,
+                "precision": 0.42857142857142855,
+                "recall": 0.8035714285714286,
+                "f1": 0.5590062111801243
+              }
+            ],
+            "mean_loss": 0.49326833216609733
+          },
+          "it": {
+            "n": 750,
+            "accuracy": 0.9413333333333334,
+            "macro_f1": 0.2211939995026474,
+            "majority_label": "Tax",
+            "majority_accuracy": 0.776,
+            "majority_macro_f1": 0.06722106722106723,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 23,
+                "predicted": 3,
+                "precision": 1.0,
+                "recall": 0.13043478260869565,
+                "f1": 0.23076923076923078
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 61,
+                "predicted": 86,
+                "precision": 0.6744186046511628,
+                "recall": 0.9508196721311475,
+                "f1": 0.7891156462585034
+              },
+              {
+                "label": "Employment Contract",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 84,
+                "predicted": 70,
+                "precision": 0.9571428571428572,
+                "recall": 0.7976190476190477,
+                "f1": 0.8701298701298702
+              },
+              {
+                "label": "Tax",
+                "support": 582,
+                "predicted": 591,
+                "precision": 0.9780033840947546,
+                "recall": 0.993127147766323,
+                "f1": 0.9855072463768116
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ],
+            "mean_loss": 0.11704730705513308
+          }
+        }
+      }
+    },
+    "heldout": {
+      "judgment": {
+        "n": 7041,
+        "accuracy": 0.7986081522511007,
+        "macro_f1": 0.45886721400682046,
+        "majority_label": "dismissal",
+        "majority_accuracy": 0.7983241016901008,
+        "majority_macro_f1": 0.44392670984046756,
+        "classes": [
+          {
+            "label": "dismissal",
+            "support": 5621,
+            "predicted": 6999,
+            "precision": 0.8002571795970853,
+            "recall": 0.9964419142501334,
+            "f1": 0.8876386687797148
+          },
+          {
+            "label": "approval",
+            "support": 1420,
+            "predicted": 42,
+            "precision": 0.5238095238095238,
+            "recall": 0.015492957746478873,
+            "f1": 0.03009575923392613
+          }
+        ],
+        "mean_loss": 0.4197892009301389,
+        "confusion": {
+          "dismissal": {
+            "dismissal": 5601,
+            "approval": 20
+          },
+          "approval": {
+            "dismissal": 1398,
+            "approval": 22
+          }
+        },
+        "confidence": [
+          {
+            "threshold": 0.5,
+            "coverage": 1.0,
+            "n": 7041,
+            "accuracy": 0.7986081522511007
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.7142451356341428,
+            "n": 5029,
+            "accuracy": 0.8767150526943727
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.4297684987927851,
+            "n": 3026,
+            "accuracy": 0.9487772637144746
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.33091890356483455,
+            "n": 2330,
+            "accuracy": 0.9785407725321889
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.24186905269137907,
+            "n": 1703,
+            "accuracy": 0.9835584263065179
+          }
+        ],
+        "by_language": {
+          "de": {
+            "n": 4077,
+            "accuracy": 0.8003433897473633,
+            "macro_f1": 0.458688316450295,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.8000981113563895,
+            "majority_macro_f1": 0.4444747240768497,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 3262,
+                "predicted": 4054,
+                "precision": 0.8019240256536754,
+                "recall": 0.9966278356836297,
+                "f1": 0.8887370147621652
+              },
+              {
+                "label": "approval",
+                "support": 815,
+                "predicted": 23,
+                "precision": 0.5217391304347826,
+                "recall": 0.014723926380368098,
+                "f1": 0.02863961813842482
+              }
+            ],
+            "mean_loss": 0.41205465582948425
+          },
+          "fr": {
+            "n": 2597,
+            "accuracy": 0.7889872930304197,
+            "macro_f1": 0.45837519714047364,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.7886022333461686,
+            "majority_macro_f1": 0.4409041980624327,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 2048,
+                "predicted": 2578,
+                "precision": 0.7909231962761831,
+                "recall": 0.99560546875,
+                "f1": 0.8815391266753135
+              },
+              {
+                "label": "approval",
+                "support": 549,
+                "predicted": 19,
+                "precision": 0.5263157894736842,
+                "recall": 0.018214936247723135,
+                "f1": 0.0352112676056338
+              }
+            ],
+            "mean_loss": 0.4423307712531613
+          },
+          "it": {
+            "n": 367,
+            "accuracy": 0.8474114441416893,
+            "macro_f1": 0.45870206489675514,
+            "majority_label": "dismissal",
+            "majority_accuracy": 0.8474114441416893,
+            "majority_macro_f1": 0.45870206489675514,
+            "classes": [
+              {
+                "label": "dismissal",
+                "support": 311,
+                "predicted": 367,
+                "precision": 0.8474114441416893,
+                "recall": 1.0,
+                "f1": 0.9174041297935103
+              },
+              {
+                "label": "approval",
+                "support": 56,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ],
+            "mean_loss": 0.34620141413580496
+          }
+        }
+      },
+      "law_area": {
+        "n": 2872,
+        "accuracy": 0.9341922005571031,
+        "macro_f1": 0.6850682954009236,
+        "majority_label": "Substantive Criminal",
+        "majority_accuracy": 0.306058495821727,
+        "majority_macro_f1": 0.036051924614974466,
+        "classes": [
+          {
+            "label": "Bankruptcy",
+            "support": 31,
+            "predicted": 31,
+            "precision": 0.9032258064516129,
+            "recall": 0.9032258064516129,
+            "f1": 0.9032258064516129
+          },
+          {
+            "label": "Competition and Antitrust",
+            "support": 4,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Criminal Procedure",
+            "support": 484,
+            "predicted": 517,
+            "precision": 0.8471953578336557,
+            "recall": 0.9049586776859504,
+            "f1": 0.8751248751248751
+          },
+          {
+            "label": "Employment Contract",
+            "support": 169,
+            "predicted": 168,
+            "precision": 0.9821428571428571,
+            "recall": 0.9763313609467456,
+            "f1": 0.9792284866468843
+          },
+          {
+            "label": "Expropriation",
+            "support": 0,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Family",
+            "support": 124,
+            "predicted": 80,
+            "precision": 0.9875,
+            "recall": 0.6370967741935484,
+            "f1": 0.7745098039215687
+          },
+          {
+            "label": "Intellectual Property",
+            "support": 3,
+            "predicted": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          {
+            "label": "Other Fiscal",
+            "support": 1,
+            "predicted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": "Public Administration",
+            "support": 54,
+            "predicted": 91,
+            "precision": 0.3626373626373626,
+            "recall": 0.6111111111111112,
+            "f1": 0.4551724137931034
+          },
+          {
+            "label": "Rental and Lease",
+            "support": 370,
+            "predicted": 371,
+            "precision": 0.9946091644204852,
+            "recall": 0.9972972972972973,
+            "f1": 0.9959514170040487
+          },
+          {
+            "label": "Substantive Criminal",
+            "support": 879,
+            "predicted": 855,
+            "precision": 0.9614035087719298,
+            "recall": 0.9351535836177475,
+            "f1": 0.9480968858131488
+          },
+          {
+            "label": "Tax",
+            "support": 491,
+            "predicted": 499,
+            "precision": 0.9839679358717435,
+            "recall": 1.0,
+            "f1": 0.9919191919191919
+          },
+          {
+            "label": "Urban Planning and Environmental",
+            "support": 262,
+            "predicted": 257,
+            "precision": 0.9922178988326849,
+            "recall": 0.9732824427480916,
+            "f1": 0.9826589595375722
+          }
+        ],
+        "mean_loss": 0.20483327286352318,
+        "confusion": {
+          "Bankruptcy": {
+            "Bankruptcy": 28,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 1,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 2,
+            "Urban Planning and Environmental": 0
+          },
+          "Competition and Antitrust": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 4,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Criminal Procedure": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 438,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 1,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 10,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 33,
+            "Tax": 1,
+            "Urban Planning and Environmental": 0
+          },
+          "Employment Contract": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 1,
+            "Employment Contract": 165,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 3,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Expropriation": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Family": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 12,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 79,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 32,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Intellectual Property": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 3,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Other Fiscal": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 1,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Public Administration": {
+            "Bankruptcy": 1,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 9,
+            "Employment Contract": 2,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 33,
+            "Rental and Lease": 2,
+            "Substantive Criminal": 0,
+            "Tax": 5,
+            "Urban Planning and Environmental": 2
+          },
+          "Rental and Lease": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 1,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 369,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Substantive Criminal": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 55,
+            "Employment Contract": 1,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 1,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 822,
+            "Tax": 0,
+            "Urban Planning and Environmental": 0
+          },
+          "Tax": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 0,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 491,
+            "Urban Planning and Environmental": 0
+          },
+          "Urban Planning and Environmental": {
+            "Bankruptcy": 0,
+            "Competition and Antitrust": 0,
+            "Criminal Procedure": 0,
+            "Employment Contract": 0,
+            "Expropriation": 0,
+            "Family": 0,
+            "Intellectual Property": 0,
+            "Other Fiscal": 0,
+            "Public Administration": 7,
+            "Rental and Lease": 0,
+            "Substantive Criminal": 0,
+            "Tax": 0,
+            "Urban Planning and Environmental": 255
+          }
+        },
+        "confidence": [
+          {
+            "threshold": 0.5,
+            "coverage": 0.9623955431754875,
+            "n": 2764,
+            "accuracy": 0.9500723589001447
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.9021587743732591,
+            "n": 2591,
+            "accuracy": 0.9710536472404477
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.8659470752089137,
+            "n": 2487,
+            "accuracy": 0.9798954563731403
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.7886490250696379,
+            "n": 2265,
+            "accuracy": 0.9849889624724062
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.7089136490250696,
+            "n": 2036,
+            "accuracy": 0.9926326129666012
+          }
+        ],
+        "by_language": {
+          "de": {
+            "n": 668,
+            "accuracy": 0.938622754491018,
+            "macro_f1": 0.36851804860187853,
+            "majority_label": "Tax",
+            "majority_accuracy": 0.36227544910179643,
+            "majority_macro_f1": 0.04091293322062553,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 26,
+                "predicted": 28,
+                "precision": 0.9285714285714286,
+                "recall": 1.0,
+                "f1": 0.962962962962963
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 4,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 112,
+                "predicted": 125,
+                "precision": 0.888,
+                "recall": 0.9910714285714286,
+                "f1": 0.9367088607594937
+              },
+              {
+                "label": "Employment Contract",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 19,
+                "predicted": 2,
+                "precision": 1.0,
+                "recall": 0.10526315789473684,
+                "f1": 0.1904761904761905
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 1,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 23,
+                "predicted": 28,
+                "precision": 0.39285714285714285,
+                "recall": 0.4782608695652174,
+                "f1": 0.4313725490196078
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 1,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 6,
+                "predicted": 1,
+                "precision": 1.0,
+                "recall": 0.16666666666666666,
+                "f1": 0.2857142857142857
+              },
+              {
+                "label": "Tax",
+                "support": 242,
+                "predicted": 248,
+                "precision": 0.9758064516129032,
+                "recall": 1.0,
+                "f1": 0.9877551020408163
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 234,
+                "predicted": 236,
+                "precision": 0.9915254237288136,
+                "recall": 1.0,
+                "f1": 0.9957446808510638
+              }
+            ],
+            "mean_loss": 0.19029279645395739
+          },
+          "fr": {
+            "n": 1713,
+            "accuracy": 0.9410391126678342,
+            "macro_f1": 0.6151600624939639,
+            "majority_label": "Substantive Criminal",
+            "majority_accuracy": 0.4191476941039113,
+            "majority_macro_f1": 0.045438724171755845,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 281,
+                "predicted": 274,
+                "precision": 0.8941605839416058,
+                "recall": 0.8718861209964412,
+                "f1": 0.8828828828828829
+              },
+              {
+                "label": "Employment Contract",
+                "support": 169,
+                "predicted": 168,
+                "precision": 0.9821428571428571,
+                "recall": 0.9763313609467456,
+                "f1": 0.9792284866468843
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 105,
+                "predicted": 78,
+                "precision": 0.9871794871794872,
+                "recall": 0.7333333333333333,
+                "f1": 0.8415300546448087
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 3,
+                "predicted": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 31,
+                "predicted": 63,
+                "precision": 0.3492063492063492,
+                "recall": 0.7096774193548387,
+                "f1": 0.4680851063829788
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 369,
+                "predicted": 371,
+                "precision": 0.9946091644204852,
+                "recall": 1.0,
+                "f1": 0.9972972972972972
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 718,
+                "predicted": 726,
+                "precision": 0.9655647382920111,
+                "recall": 0.9763231197771588,
+                "f1": 0.9709141274238228
+              },
+              {
+                "label": "Tax",
+                "support": 9,
+                "predicted": 9,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 28,
+                "predicted": 21,
+                "precision": 1.0,
+                "recall": 0.75,
+                "f1": 0.8571428571428571
+              }
+            ],
+            "mean_loss": 0.2003097038726136
+          },
+          "it": {
+            "n": 491,
+            "accuracy": 0.9042769857433809,
+            "macro_f1": 0.2406612426711095,
+            "majority_label": "Tax",
+            "majority_accuracy": 0.48879837067209775,
+            "majority_macro_f1": 0.05051036514784805,
+            "classes": [
+              {
+                "label": "Bankruptcy",
+                "support": 5,
+                "predicted": 3,
+                "precision": 0.6666666666666666,
+                "recall": 0.4,
+                "f1": 0.5
+              },
+              {
+                "label": "Competition and Antitrust",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Criminal Procedure",
+                "support": 91,
+                "predicted": 118,
+                "precision": 0.6949152542372882,
+                "recall": 0.9010989010989011,
+                "f1": 0.7846889952153111
+              },
+              {
+                "label": "Employment Contract",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Expropriation",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Family",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Intellectual Property",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Other Fiscal",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Public Administration",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Rental and Lease",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              {
+                "label": "Substantive Criminal",
+                "support": 155,
+                "predicted": 128,
+                "precision": 0.9375,
+                "recall": 0.7741935483870968,
+                "f1": 0.8480565371024735
+              },
+              {
+                "label": "Tax",
+                "support": 240,
+                "predicted": 242,
+                "precision": 0.9917355371900827,
+                "recall": 1.0,
+                "f1": 0.995850622406639
+              },
+              {
+                "label": "Urban Planning and Environmental",
+                "support": 0,
+                "predicted": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ],
+            "mean_loss": 0.24039724826681866
+          }
+        }
+      }
+    }
+  },
+  "confidence_0_9_predictions": {
+    "judgment": {
+      "n": 5027,
+      "correct": 4892,
+      "pred": {
+        "dismissal": 5027
+      },
+      "gold_when_wrong": {
+        "approval": 135
+      }
+    },
+    "law_area": {
+      "n": 5493,
+      "correct": 5381,
+      "pred": {
+        "Substantive Criminal": 1465,
+        "Rental and Lease": 813,
+        "Criminal Procedure": 772,
+        "Public Administration": 19,
+        "Employment Contract": 371,
+        "Tax": 1174,
+        "Urban Planning and Environmental": 728,
+        "Bankruptcy": 151
+      },
+      "gold_when_wrong": {
+        "Public Administration": 44,
+        "Substantive Criminal": 14,
+        "Criminal Procedure": 7,
+        "Tax": 47
+      }
+    }
+  }
+}
